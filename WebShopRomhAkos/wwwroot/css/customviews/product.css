@@ -1,0 +1,167 @@
+﻿.img-responsive {
+    height: 100%;
+    width: 100%;
+}
+
+.filter-panel {
+    padding: 20px;
+    border-right: 1px solid #ccc;
+}
+
+.row-container {
+    margin-bottom: 70px;
+}
+
+/* h1 style */
+h1.display-4 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+/* Cards style */
+.card {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ddd;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-title, .text-muted {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    text-decoration: none !important;
+    word-break: break-word;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.card-link, .card-link:hover, .card-link:focus, .card-link:visited, .card-link:active {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+/* Button and price in card */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #5cb85c;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #449d44;
+}
+
+.text-muted {
+    color: #777;
+    text-decoration: none;
+}
+
+/* filter */
+.filter-panel {
+    padding: 20px;
+    border-right: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.form-filter input[type="text"],
+.form-filter select,
+.form-filter .btn {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.priceDisplay {
+    text-align: center;
+    padding-top: 15px;
+    font-size: 1.4rem;
+}
+
+.storageDisplay {
+    text-align: center;
+    padding-top: 15px;
+    font-size: 1.1rem;
+}
+
+
+/* Respondive views */
+@media (min-width: 1000px) and (max-width: 1400px) {
+    .col-md-4-custom {
+        flex: 0 0 50%;
+        max-width: 33.333333%;
+    }
+
+    .filter-panel-col {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+
+    .products-list-col {
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+    }
+
+    .storageDisplay {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+    .col-md-6-custom {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .filter-panel-col {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+
+    .products-list-col {
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+    }
+}
+
+@media (max-width: 768px) {
+    .filter-panel {
+        padding: 10px;
+        border-right: none;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .priceDisplay {
+        font-size: 1.8rem;
+    }
+
+    .storageDisplay {
+        font-size: 1.8rem;
+    }
+}

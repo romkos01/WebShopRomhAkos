@@ -1,0 +1,157 @@
+﻿/* General */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Container style */
+.product-details, .product-description {
+    max-width: 800px;
+    margin: 20px auto;
+    margin-bottom: 70px;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 5px !important;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Image style */
+.product-image {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+/* h1 to center */
+.product-details h1 {
+    text-align: left;
+}
+
+/* Specifications and options */
+.specifications {
+    border-radius: 5px;
+}
+
+.product-specifications, .purchase-options {
+    margin-top: 20px;
+}
+
+/* Specifications */
+.product-specifications .accordion-toggle {
+    display: block;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right:10px;
+    background-color: royalblue;
+    cursor: pointer;
+    text-align: left;
+    color: white;
+    margin-top: 5px;
+    transition: background-color 0.3s;
+    border: 1px solid #000000;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 50px;
+}
+
+.product-specifications .accordion-toggle:hover {
+    background-color: darkblue;
+}
+
+/* Rolling-down content style */
+.accordion-content {
+    padding: 20px;
+    background-color: whitesmoke;
+    border: 1px solid #ddd;
+    display: none; /* Start with closed statement */
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+/* Purching options */
+.purchase-options {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.purchase-options label {
+    margin-right: 10px;
+}
+
+.purchase-options input[type="number"] {
+    width: 80px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+}
+
+.purchase-options button {
+    padding: 10px 20px;
+    background-color: royalblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Table */
+table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.left-align {
+    text-align: left;
+    width: 50%;
+}
+
+.right-align {
+    text-align: right;
+    width: 50%;
+}
+
+tr {
+    width: 100%;
+}
+
+td {
+    width: 45%;
+}
+
+
+.purchase-options button:hover {
+    background-color: darkblue;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .product-image {
+        width: 100%;
+    }
+
+    .purchase-options input[type="number"],
+    .purchase-options button {
+        margin-top: 10px;
+    }
+
+    .purchase-options label,
+    .purchase-options input,
+    .purchase-options button {
+        margin: 1px auto;
+    }
+
+    .purchase-input {
+        width: 50px;
+    }
+
+    td {
+        width: 5%;
+    }
+
+}

@@ -1,0 +1,56 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model IEnumerable<WebShopRomhAkos.Models.SmartphoneModel>
+
+<link rel="stylesheet" type="text/css" href="~/css/customviews/product.css">
+<div class="container">
+    <section class="welcome-section text-center my-5">
+        <h1 class="display-4">Welcome to my WebShop!</h1>
+        <p>Discover the latest smartphones at the best prices.</p>
+    </section>
+
+    <section class="introduction-section my-5">
+        <h2>About Us</h2>
+        <p>Write a brief introduction about your webshop or its goals here.</p>
+    </section>
+
+    <section class="featured-products-section my-5">
+        <h2>Featured Products</h2>
+        <div class="row">
+                @foreach (var product in Model)
+                {
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="~/images/@product.ImageUrl" class="card-img-top" alt="@product.Name">
+                            <div class="card-body">
+                                <h5 class="card-title">@product.Name</h5>
+                            </div>
+                        </div>
+                    </div>
+                }
+        </div>
+    </section>
+
+    <section class="technology-section my-5">
+        <h2>Technologies Used</h2>
+        <ul>
+            <li>ASP.NET Core MVC</li>
+            <li>Entity Framework Core</li>
+            <li>SQL Server</li>
+            <li>Dependency Injection</li>
+            <li>Async</li>
+            <li>LINQ</li>
+            <li>Razor Pages</li>
+            <li>JavaScript</li>
+            <li>Bootstrap</li>
+            <li>Git</li>
+        </ul>
+    </section>
+
+    <section class="contact-section my-5">
+        <h2>Contact Us</h2>
+        <p>For more information, please contact us.</p>
+    </section>
+</div>

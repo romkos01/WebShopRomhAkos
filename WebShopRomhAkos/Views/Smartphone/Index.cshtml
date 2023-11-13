@@ -1,0 +1,79 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model IEnumerable<WebShopRomhAkos.Models.SmartphoneModel>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Title Here</title>
+    <link href="/css/customviews/product.css" rel="stylesheet" type="text/css" />
+
+    <!-- További fejléc elemek... -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.js"></script>
+
+</head>
+<body>
+
+    <div class="text-center">
+        <h1 class="display-4">Welcome to Our Web Shop</h1>
+        <p>Discover our range of products and learn more about them.</p>
+    </div>
+
+    <div class="container">
+        <h2 class="text-center my-4">Mobile Phones</h2>
+        <div class="row">
+
+            <div class="col-md-2 filter-panel-col">
+                <div class="filter-panel">
+                        @using (Html.BeginForm("Index", "Smartphone", FormMethod.Get, new { @class = "form-filter" }))
+                        {
+                            <input type="text" name="searchTerm" class="form-control mb-2" placeholder="Keresés...">
+                            <div class="inputUnit">
+                                <input type="hidden" id="minPrice" name="minPrice">
+                                <input type="hidden" id="maxPrice" name="maxPrice">
+                                <div id="priceSlider" data-max-price="@ViewBag.MaxPriceInDb"></div>
+                                <p class="priceDisplay">$<span id="minPriceDisplay"></span> - $<span id="maxPriceDisplay"></span></p>
+                            </div>
+                            <div class="inputUnit">
+                                <input type="hidden" id="minStorage" name="minStorage">
+                                <input type="hidden" id="maxStorage" name="maxStorage">
+                                <div id="storageSlider" data-min-storage="@ViewBag.MinStorageInDb" data-max-storage="@ViewBag.MaxStorageInDb"></div>
+                                <p class="storageDisplay"><span id="minStorageDisplay"></span>GB - <span id="maxStorageDisplay"></span>GB</p>
+                            </div>
+                            <input type="text" name="ramSize" class="form-control mb-2" placeholder="RAM">
+                            <button type="submit" class="btn btn-primary">Szűrés</button>
+                        }
+                </div>
+            </div>
+            <div class="col-md-10 products-list-col">
+                <div class="row row-container">
+                @foreach (var product in Model)
+                {
+                        <div class="col-md-3 col-md-4-custom col-md-6-custom col-sm-6 col-6">
+                        <a href="@Url.Action("Details", "Smartphone", new { id = product.Id })" class="card-link">
+                            <div class="card mb-4 shadow-sm">
+                                <img src="~/images/@product.ImageUrl" class="card-img-top" alt="@product.Name">
+                                <div class="card-body">
+                                    <h5 class="card-title">@product.Name</h5>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <small class="text-muted">$@product.Price</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                }
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="~/js/product.js"></script>
+</body>
+</html>

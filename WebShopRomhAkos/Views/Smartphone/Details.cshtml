@@ -1,0 +1,95 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    void DisplayFeature(string featureName, bool featureValue)
+    {
+        <div>
+            <strong>@featureName:</strong>
+            <span style="color: @(featureValue ? "green" : "red");">@Html.Raw(featureValue ? "&#10004;" : "&#10006;")</span>
+        </div>
+    }
+
+
+}
+
+@model WebShopRomhAkos.Models.SmartphoneModel
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/customviews/details.css">
+
+    <title>@Model.Name - Details</title>
+    <script type="module" src="~/js/details.js"></script>
+    <script type="module">
+        var globalPricePerUnit = @Model.Price.ToString(System.Globalization.CultureInfo.InvariantCulture);;
+    </script>
+</head>
+<body>
+
+<div class="product-details">
+    <h1>@Model.Title</h1>
+    <img class="product-image" src="@Url.Content("~/images/" + Model.ImageUrl)" alt="@Model.Name">
+
+    <div class="product-description">
+        <h3>Description:</h3>
+        <p>@Model.Description</p>
+    </div>
+
+    <div class="specifications">
+        <h2>Specifications</h2>
+            <div class="product-specifications">
+                <button class="accordion-toggle">Technical Specs</button>
+                    <div class="accordion-content" style="display:none;">
+                            <p><strong>CPU cores:</strong> @Model.CPUcore</p>
+                            <p><strong>CPU speed:</strong> @Model.CPUspeed MHz</p>
+                            <p><strong>RAM:</strong> @Model.RAM</p>
+                            <p><strong>Storage:</strong> @Model.StorageSize GB</p>
+                    </div>
+                <button class="accordion-toggle">Display</button>
+                    <div class="accordion-content" style="display:none;">
+                            <p><strong>Panel:</strong> @Model.Panel</p>
+                            <p><strong>Screen size:</strong> @Model.ScreenSize"</p>
+                            <p><strong>Display resolution:</strong> @Model.DisplayResolution</p>
+                            <p><strong>Refresh rate:</strong> @Model.RefreshRate Hz</p>
+                    </div>
+                <button class="accordion-toggle">Other Specs</button>
+                    <div class="accordion-content" style="display:none;">
+                            <p><strong>Main camera:</strong> @Model.MainCameraResolution MPx</p>
+                            <p><strong>Battery:</strong> @Model.BatteryCapacity mAh</p>
+                            
+                            @{
+                                DisplayFeature("4G", Model.is4G);
+                                DisplayFeature("5G", Model.is5G);
+                                DisplayFeature("NFC", Model.isNFC);
+                                DisplayFeature("USB-C", Model.isUSB_C);
+                                DisplayFeature("IP67+", Model.isWaterProof);
+                            }
+                    </div>
+            </div>
+    </div>
+
+    <div class="purchase-options">
+        <table>
+            <tr class="left-align">
+                <td><h2>Price: $<span id="priceValue">@Model.Price</span></h2></td>
+            </tr>
+            <tr class="right-align">
+                <td></td>
+                <td><label for="quantity">Quantity:</label></td>
+                <td><input type="number" id="quantity" name="quantity" min="1" max="50" value="1"></td>
+                <td>
+                    <input type="hidden" id="pricePerUnit" value="@Model.Price" />
+                    <button type="button">Add to Cart</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
