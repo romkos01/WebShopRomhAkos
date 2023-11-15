@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\PROJEKT\\ASP.NET MVC\\WebShopRomhAkosAppVersion1\\WebShopRomhAkos\\WebShopRomhAkos.csproj": {}
+    "D:\\PROJEKT\\ASP.NET MVC\\WebShopRomhAkosGitVersion\\WebShopRomhAkos\\WebShopRomhAkos\\WebShopRomhAkos.csproj": {}
   },
   "projects": {
-    "D:\\PROJEKT\\ASP.NET MVC\\WebShopRomhAkosAppVersion1\\WebShopRomhAkos\\WebShopRomhAkos.csproj": {
+    "D:\\PROJEKT\\ASP.NET MVC\\WebShopRomhAkosGitVersion\\WebShopRomhAkos\\WebShopRomhAkos\\WebShopRomhAkos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PROJEKT\\ASP.NET MVC\\WebShopRomhAkosAppVersion1\\WebShopRomhAkos\\WebShopRomhAkos.csproj",
+        "projectUniqueName": "D:\\PROJEKT\\ASP.NET MVC\\WebShopRomhAkosGitVersion\\WebShopRomhAkos\\WebShopRomhAkos\\WebShopRomhAkos.csproj",
         "projectName": "WebShopRomhAkos",
-        "projectPath": "D:\\PROJEKT\\ASP.NET MVC\\WebShopRomhAkosAppVersion1\\WebShopRomhAkos\\WebShopRomhAkos.csproj",
+        "projectPath": "D:\\PROJEKT\\ASP.NET MVC\\WebShopRomhAkosGitVersion\\WebShopRomhAkos\\WebShopRomhAkos\\WebShopRomhAkos.csproj",
         "packagesPath": "C:\\Users\\KomPhone\\.nuget\\packages\\",
-        "outputPath": "D:\\PROJEKT\\ASP.NET MVC\\WebShopRomhAkosAppVersion1\\WebShopRomhAkos\\obj\\",
+        "outputPath": "D:\\PROJEKT\\ASP.NET MVC\\WebShopRomhAkosGitVersion\\WebShopRomhAkos\\WebShopRomhAkos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\KomPhone\\AppData\\Roaming\\NuGet\\NuGet.Config",

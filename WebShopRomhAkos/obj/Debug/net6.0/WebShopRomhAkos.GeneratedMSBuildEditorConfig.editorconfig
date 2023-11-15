@@ -9,45 +9,45 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WebShopRomhAkos
 build_property.RootNamespace = WebShopRomhAkos
-build_property.ProjectDir = D:\PROJEKT\ASP.NET MVC\WebShopRomhAkosAppVersion1\WebShopRomhAkos\
+build_property.ProjectDir = D:\PROJEKT\ASP.NET MVC\WebShopRomhAkosGitVersion\WebShopRomhAkos\WebShopRomhAkos\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\PROJEKT\ASP.NET MVC\WebShopRomhAkosAppVersion1\WebShopRomhAkos
+build_property.MSBuildProjectDirectory = D:\PROJEKT\ASP.NET MVC\WebShopRomhAkosGitVersion\WebShopRomhAkos\WebShopRomhAkos
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/PROJEKT/ASP.NET MVC/WebShopRomhAkosAppVersion1/WebShopRomhAkos/Views/Home/Index.cshtml]
+[D:/PROJEKT/ASP.NET MVC/WebShopRomhAkosGitVersion/WebShopRomhAkos/WebShopRomhAkos/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PROJEKT/ASP.NET MVC/WebShopRomhAkosAppVersion1/WebShopRomhAkos/Views/Home/Privacy.cshtml]
+[D:/PROJEKT/ASP.NET MVC/WebShopRomhAkosGitVersion/WebShopRomhAkos/WebShopRomhAkos/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PROJEKT/ASP.NET MVC/WebShopRomhAkosAppVersion1/WebShopRomhAkos/Views/Shared/Error.cshtml]
+[D:/PROJEKT/ASP.NET MVC/WebShopRomhAkosGitVersion/WebShopRomhAkos/WebShopRomhAkos/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PROJEKT/ASP.NET MVC/WebShopRomhAkosAppVersion1/WebShopRomhAkos/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/PROJEKT/ASP.NET MVC/WebShopRomhAkosGitVersion/WebShopRomhAkos/WebShopRomhAkos/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PROJEKT/ASP.NET MVC/WebShopRomhAkosAppVersion1/WebShopRomhAkos/Views/Smartphone/Details.cshtml]
+[D:/PROJEKT/ASP.NET MVC/WebShopRomhAkosGitVersion/WebShopRomhAkos/WebShopRomhAkos/Views/Smartphone/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU21hcnRwaG9uZVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PROJEKT/ASP.NET MVC/WebShopRomhAkosAppVersion1/WebShopRomhAkos/Views/Smartphone/Index.cshtml]
+[D:/PROJEKT/ASP.NET MVC/WebShopRomhAkosGitVersion/WebShopRomhAkos/WebShopRomhAkos/Views/Smartphone/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU21hcnRwaG9uZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PROJEKT/ASP.NET MVC/WebShopRomhAkosAppVersion1/WebShopRomhAkos/Views/_ViewImports.cshtml]
+[D:/PROJEKT/ASP.NET MVC/WebShopRomhAkosGitVersion/WebShopRomhAkos/WebShopRomhAkos/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PROJEKT/ASP.NET MVC/WebShopRomhAkosAppVersion1/WebShopRomhAkos/Views/_ViewStart.cshtml]
+[D:/PROJEKT/ASP.NET MVC/WebShopRomhAkosGitVersion/WebShopRomhAkos/WebShopRomhAkos/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PROJEKT/ASP.NET MVC/WebShopRomhAkosAppVersion1/WebShopRomhAkos/Views/Shared/_Layout.cshtml]
+[D:/PROJEKT/ASP.NET MVC/WebShopRomhAkosGitVersion/WebShopRomhAkos/WebShopRomhAkos/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-7wntydwm9v

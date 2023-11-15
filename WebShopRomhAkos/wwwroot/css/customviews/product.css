@@ -10,12 +10,33 @@
 
 .row-container {
     margin-bottom: 70px;
+    display: flex;
+    flex-wrap: wrap;
 }
+
 
 /* h1 style */
 h1.display-4 {
     font-size: 2.5rem;
     color: #333;
+}
+
+/* sorting */
+.sortSection-container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+}
+
+.form-group .form-control,
+.form-group .btn {
+    margin: 5px;
 }
 
 /* Cards style */
@@ -89,6 +110,7 @@ h1.display-4 {
     padding: 20px;
     border-right: 1px solid #ccc;
     margin-bottom: 20px;
+
 }
 
 .form-filter input[type="text"],
@@ -113,40 +135,55 @@ h1.display-4 {
 
 /* Respondive views */
 @media (min-width: 1000px) and (max-width: 1400px) {
+    .container {
+        width: 95%;
+        max-width: none;
+        padding: 0;
+        margin: 0 auto;
+    }
+
     .col-md-4-custom {
-        flex: 0 0 50%;
-        max-width: 33.333333%;
+        flex: 1;
+        min-width: 33.33%;
+        box-sizing: border-box;
     }
 
     .filter-panel-col {
-        flex: 0 0 33.333333%;
-        max-width: 33.333333%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        box-sizing: border-box;
     }
 
     .products-list-col {
-        flex: 0 0 66.666667%;
-        max-width: 66.666667%;
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+        box-sizing: border-box;
     }
 
     .storageDisplay {
         font-size: 1.4rem;
+        width: 100%;
     }
 }
 
 @media (min-width: 768px) and (max-width: 1000px) {
-    .col-md-6-custom {
-        flex: 0 0 50%;
-        max-width: 50%;
+    .container {
+        width: 98%;
+        max-width: none;
+        padding: 0;
+        margin: 0 auto;
     }
 
-    .filter-panel-col {
-        flex: 0 0 33.333333%;
-        max-width: 33.333333%;
+    .col-md-4-custom, .filter-panel-col, .products-list-col {
+        box-sizing: border-box;
+        flex-grow: 2;
+        flex-shrink: 2;
+        flex-basis: 50%;
     }
 
-    .products-list-col {
-        flex: 0 0 66.666667%;
-        max-width: 66.666667%;
+    .storageDisplay {
+        font-size: 1.4rem;
+        width: 100%;
     }
 }
 

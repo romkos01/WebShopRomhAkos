@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nHk2y3LaHYPJ9OOJQKCRz+Gt5N7sEmoPDPAPHFxXcZNeAnU/oCo9hB/DglML5FYD6wemyo2oF71iqmLOScfaNQ==",
+  "dgSpecHash": "WmFIFVwYFCtegEyC6mGNt0ul7AFNmqIW4VC5r7gIiy/EyyaJkfY8cXlI4SbNfP5+Q55ILbNe6HNT+cm8GFq1GA==",
   "success": true,
-  "projectFilePath": "D:\\PROJEKT\\ASP.NET MVC\\WebShopRomhAkosAppVersion1\\WebShopRomhAkos\\WebShopRomhAkos.csproj",
+  "projectFilePath": "D:\\PROJEKT\\ASP.NET MVC\\WebShopRomhAkosGitVersion\\WebShopRomhAkos\\WebShopRomhAkos\\WebShopRomhAkos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\KomPhone\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\KomPhone\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

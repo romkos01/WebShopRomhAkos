@@ -21,7 +21,8 @@ namespace WebShopRomhAkos.Controllers
 
 
         public async Task<IActionResult> Index(string? searchTerm, decimal? minPrice, decimal? maxPrice,
-            decimal? ramSize, decimal? minStorage, decimal? maxStorage)
+            decimal? ramSize, decimal? minStorage, decimal? maxStorage,
+            string sortOrder)
         {
             var maxPriceInDb = context.SmartPhone.Max(p => p.Price);
             ViewBag.MaxPriceInDb = Math.Round(maxPriceInDb);
@@ -32,6 +33,19 @@ namespace WebShopRomhAkos.Controllers
             var maxStorageInDb = context.SmartPhone.Max(p => p.StorageSize);
             ViewBag.MaxStorageInDb = maxStorageInDb;
             var filteredProducts = await productService.GetFilteredProducts(searchTerm, minPrice, maxPrice, ramSize, minStorage, maxStorage);
+
+            switch (sortOrder)
+            {
+                case "price_asc":
+                    filteredProducts = filteredProducts.OrderBy(p => p.Price);
+                    break;
+                case "price_desc":
+                    filteredProducts = filteredProducts.OrderByDescending(p => p.Price);
+                    break;
+                // Itt adhatsz hozzá további rendezési eseteket
+                default:
+                    break;
+            }
 
             return View(filteredProducts);
         }
