@@ -42,7 +42,13 @@ namespace WebShopRomhAkos.Controllers
                 case "price_desc":
                     filteredProducts = filteredProducts.OrderByDescending(p => p.Price);
                     break;
-                // Itt adhatsz hozzá további rendezési eseteket
+                case "name_asc":
+                    filteredProducts = filteredProducts.OrderBy(p => p.Name);
+                    break;
+                case "name_desc":
+                    filteredProducts = filteredProducts.OrderByDescending(p => p.Name);
+                    break;
+
                 default:
                     break;
             }

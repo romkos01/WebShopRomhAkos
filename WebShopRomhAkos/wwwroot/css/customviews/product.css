@@ -1,4 +1,8 @@
-﻿.img-responsive {
+﻿body {
+    margin-bottom: 70px;
+}
+
+.img-responsive {
     height: 100%;
     width: 100%;
 }
@@ -9,9 +13,12 @@
 }
 
 .row-container {
-    margin-bottom: 70px;
     display: flex;
     flex-wrap: wrap;
+}
+
+.container {
+    max-width: 90%;
 }
 
 

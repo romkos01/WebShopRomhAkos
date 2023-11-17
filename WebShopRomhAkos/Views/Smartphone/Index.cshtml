@@ -34,10 +34,12 @@
             {
                 <div class="form-group d-flex">
                     <select class="form-control mb-2 mr-2" name="sortOrder">
-                        <option value="price_asc">Ár szerint növekvő</option>
-                        <option value="price_desc">Ár szerint csökkenő</option>
+                        <option value="price_asc">Price (Low to High)</option>
+                        <option value="price_desc">Price (High to Low)</option>
+                        <option value="name_asc">Name (A-Z)</option>
+                        <option value="name_desc">Name (Z-A)</option>
                     </select>
-                    <input class="btn btn-primary mb-2" type="submit" value="Rendezés" />
+                    <input class="btn btn-primary mb-2" type="submit" value="Sort" />
                 </div>
             }
         </div>
@@ -48,7 +50,7 @@
                 <div class="col-md-6-custom filter-panel-col">
                     @using (Html.BeginForm("Index", "Smartphone", FormMethod.Get, new { @class = "form-filter" }))
                     {
-                        <input type="text" name="searchTerm" class="form-control mb-2" placeholder="Keresés...">
+                        <input type="text" name="searchTerm" class="form-control mb-2" placeholder="Searching...">
                         <div class="inputUnit">
                             <input type="hidden" id="minPrice" name="minPrice">
                             <input type="hidden" id="maxPrice" name="maxPrice">
@@ -62,7 +64,7 @@
                             <p class="storageDisplay"><span id="minStorageDisplay"></span>GB - <span id="maxStorageDisplay"></span>GB</p>
                         </div>
                         <input type="text" name="ramSize" class="form-control mb-2" placeholder="RAM">
-                        <button type="submit" class="btn btn-primary">Szűrés</button>
+                        <button type="submit" class="btn btn-primary">Filter</button>
                     }
                 </div>
             </div>
