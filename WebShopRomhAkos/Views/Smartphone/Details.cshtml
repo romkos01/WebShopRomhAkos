@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="~/css/customviews/details.css">
 
     <title>@Model.Name - Details</title>
-    <script type="module" src="~/js/details.js"></script>
+
     <script type="module">
         var globalPricePerUnit = @Model.Price.ToString(System.Globalization.CultureInfo.InvariantCulture);;
     </script>
@@ -63,11 +63,11 @@
                             <p><strong>Battery:</strong> @Model.BatteryCapacity mAh</p>
                             
                             @{
-                                DisplayFeature("4G", Model.is4G);
-                                DisplayFeature("5G", Model.is5G);
-                                DisplayFeature("NFC", Model.isNFC);
-                                DisplayFeature("USB-C", Model.isUSB_C);
-                                DisplayFeature("IP67+", Model.isWaterProof);
+                                DisplayFeature("4G", Model.Is4G);
+                                DisplayFeature("5G", Model.Is5G);
+                                DisplayFeature("NFC", Model.IsNFC);
+                                DisplayFeature("USB-C", Model.IsUSB_C);
+                                DisplayFeature("IP67+", Model.IsWaterProof);
                             }
                     </div>
             </div>
@@ -84,12 +84,13 @@
                 <td><input type="number" id="quantity" name="quantity" min="1" max="50" value="1"></td>
                 <td>
                     <input type="hidden" id="pricePerUnit" value="@Model.Price" />
-                    <button type="button">Add to Cart</button>
+                    <button type="button" class="purchase-button" data-product-id="@Model.Id">Add to Cart</button>
                 </td>
             </tr>
         </table>
     </div>
 </div>
 
+    <script type="module" src="~/js/details.js"></script>
 </body>
 </html>

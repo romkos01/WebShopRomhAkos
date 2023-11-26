@@ -26,7 +26,7 @@ function initDetailsScript(price) {
     price = price.replace(',', '.');
     pricePerUnit = parseFloat(price);
     if (isNaN(pricePerUnit)) {
-        console.error('A pricePerUnit nem szám: ', price);
+        console.error('pricePerUnit not a number: ', price);
         return;
     }
 
@@ -43,4 +43,44 @@ function updatePrice() {
     }
     var newPrice = pricePerUnit * quantity;
     document.getElementById('priceValue').innerText = newPrice.toFixed(2);
+}
+
+// Cookies section
+
+document.addEventListener("DOMContentLoaded", function () {
+    var addToCartButton = document.querySelector('.purchase-button');
+    
+    if (addToCartButton) {
+        addToCartButton.addEventListener('click', function () {
+            var productId = this.getAttribute('data-product-id');
+            var quantity = document.getElementById('quantity').value;
+            addToCart(productId, quantity);
+        });
+    } else {
+        console.log('There is no button in the cart.');
+    }
+});
+
+function addToCart(productId, quantity) {
+    fetch('/ShoppingCart/AddToCart', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ ProductId: parseInt(productId, 10), Quantity: parseInt(quantity, 10) })
+    })
+        .then(response => {
+            if (!response.ok) {
+                return response.text().then(text => {
+                    throw new Error('Error in response: ' + text);
+                });
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log('Success:', data);
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
 }

@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\WebShopRomhAkos.bundle.scp.css"
     },
     {
+      "Id": "D:\\PROJEKT\\ASP.NET MVC\\WebShopRomhAkosGitVersion\\WebShopRomhAkos\\WebShopRomhAkos\\wwwroot\\css\\customviews\\cart.css",
+      "PackagePath": "staticwebassets\\css\\customviews\\cart.css"
+    },
+    {
       "Id": "D:\\PROJEKT\\ASP.NET MVC\\WebShopRomhAkosGitVersion\\WebShopRomhAkos\\WebShopRomhAkos\\wwwroot\\css\\customviews\\details.css",
       "PackagePath": "staticwebassets\\css\\customviews\\details.css"
     },

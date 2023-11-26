@@ -1,26 +1,23 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-using WebShopRomhAkos.Data;
 using WebShopRomhAkos.Models;
-using Microsoft.EntityFrameworkCore;
+using WebShopRomhAkos.Services;
 
 
 namespace WebShopRomhAkos.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ProductContext productcontext;
+        private readonly ProductService productService;
 
-        public HomeController(ProductContext productcontext)
+        public HomeController(ProductService productService)
         {
-            this.productcontext = productcontext;
+            this.productService = productService;
         }
 
         public async Task<ActionResult> Index()
         {
-            var featuredProducts = await productcontext.SmartPhone
-                                        .Where(p => p.isFeatured)
-                                        .ToListAsync();
+            var featuredProducts = await productService.GetFeaturedSmartphonesAsync();
             return View(featuredProducts);
         }
 

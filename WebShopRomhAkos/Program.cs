@@ -26,6 +26,10 @@ namespace WebShopRomhAkos
 
             builder.Services.AddScoped<ProductService>();
 
+            builder.Services.AddHttpContextAccessor();
+
+            builder.Services.AddScoped<CartService>();
+
             // Building the app
             var app = builder.Build();
 

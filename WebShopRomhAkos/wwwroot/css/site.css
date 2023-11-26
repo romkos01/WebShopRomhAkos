@@ -37,6 +37,22 @@ article {
     margin-bottom: 70px;
 }
 
+.nav-link {
+    color: darkblue;
+    font-size: 16px;
+}
+
+/* Cart*/
+.bi-cart, .bi-person {
+    font-size: 1.6em;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav .nav-link {
+        padding: 10px;
+    }
+}
+
 @media (max-height: 400px) {
     .footer {
         position: static;

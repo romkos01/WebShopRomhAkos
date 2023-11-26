@@ -26,12 +26,12 @@ namespace WebShopRomhAkos.Models
         public int StorageSize { get; set; }
         public int MainCameraResolution { get; set; }
         public int BatteryCapacity { get; set; }
-        public bool is4G { get; set; }
-        public bool is5G { get; set; }
-        public bool isNFC { get; set; }
-        public bool isUSB_C { get; set; }
-        public bool isWaterProof { get; set; }
-        public bool isFeatured { get; set; }
+        public bool Is4G { get; set; }
+        public bool Is5G { get; set; }
+        public bool IsNFC { get; set; }
+        public bool IsUSB_C { get; set; }
+        public bool IsWaterProof { get; set; }
+        public bool IsFeatured { get; set; }
 
 
         public SmartphoneModel( int Id, string Name, string Description, string Author,
@@ -40,8 +40,8 @@ namespace WebShopRomhAkos.Models
                                 string DisplayResolution, int RefreshRate,
                                 int CPUcore, int CPUspeed, int RAM, int StorageSize,
                                 int MainCameraResolution, int BatteryCapacity,
-                                bool is4G, bool is5G, bool isNFC, bool isUSB_C, bool isWaterProof,
-                                bool isFeatured)
+                                bool Is4G, bool Is5G, bool IsNFC, bool IsUSB_C, bool IsWaterProof,
+                                bool IsFeatured)
         {
             this.Id = Id;
             this.Name = Name;
@@ -63,12 +63,12 @@ namespace WebShopRomhAkos.Models
             this.StorageSize = StorageSize;
             this.MainCameraResolution = MainCameraResolution;
             this.BatteryCapacity = BatteryCapacity;
-            this.is4G = is4G;
-            this.is5G = is5G;
-            this.isNFC = isNFC;
-            this.isUSB_C = isUSB_C;
-            this.isWaterProof = isWaterProof;
-            this.isFeatured = isFeatured;   
+            this.Is4G = Is4G;
+            this.Is5G = Is5G;
+            this.IsNFC = IsNFC;
+            this.IsUSB_C = IsUSB_C;
+            this.IsWaterProof = IsWaterProof;
+            this.IsFeatured = IsFeatured;   
         }
 
     }

@@ -7,7 +7,7 @@
     var maxPriceFromServer = parseInt(priceSlider.getAttribute('data-max-price'));
 
     if (isNaN(maxPriceFromServer) || maxPriceFromServer <= 0) {
-        console.error('A maxPriceFromServer értéke érvénytelen:', maxPriceFromServer);
+        console.error('The value of maxStorageFromServer is not valid:', maxPriceFromServer);
         maxPriceFromServer = 2000;
     }
 
@@ -43,7 +43,7 @@
 
 
     if (isNaN(maxStorageFromServer) || maxStorageFromServer <= 0) {
-        console.error('A maxStorageFromServer értéke érvénytelen:', maxStorageFromServer);
+        console.error('The value of maxStorageFromServer is not valid:', maxStorageFromServer);
         minStorageFromServer = 0;
         maxStorageFromServer = 2000;
     }

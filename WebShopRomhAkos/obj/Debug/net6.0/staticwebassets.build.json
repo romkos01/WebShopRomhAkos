@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "d85x+xaA4IPPQd15WxI0Of5EBBun8e3aMT4Y9cUZReI=",
+  "Hash": "1P1NGRHnYMWVMAmgp8y0VzOfDT4uMfuxxy9/3A/h1b4=",
   "Source": "WebShopRomhAkos",
   "BasePath": "_content/WebShopRomhAkos",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\PROJEKT\\ASP.NET MVC\\WebShopRomhAkosGitVersion\\WebShopRomhAkos\\WebShopRomhAkos\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\WebShopRomhAkos.bundle.scp.css"
+    },
+    {
+      "Identity": "D:\\PROJEKT\\ASP.NET MVC\\WebShopRomhAkosGitVersion\\WebShopRomhAkos\\WebShopRomhAkos\\wwwroot\\css\\customviews\\cart.css",
+      "SourceId": "WebShopRomhAkos",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\PROJEKT\\ASP.NET MVC\\WebShopRomhAkosGitVersion\\WebShopRomhAkos\\WebShopRomhAkos\\wwwroot\\",
+      "BasePath": "_content/WebShopRomhAkos",
+      "RelativePath": "css/customviews/cart.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\customviews\\cart.css"
     },
     {
       "Identity": "D:\\PROJEKT\\ASP.NET MVC\\WebShopRomhAkosGitVersion\\WebShopRomhAkos\\WebShopRomhAkos\\wwwroot\\css\\customviews\\details.css",
